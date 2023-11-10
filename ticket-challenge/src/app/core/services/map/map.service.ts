@@ -20,9 +20,9 @@ export class MapService {
     getAllSeat(salonId: string): Observable<number[][]> {
         // return this.apiService.get(`${environment.baseUrl}` + endpoint/${salonId});
         let data = [];
-        for (let i = 0; i <= 12; i++) {
+        for (let i = 0; i < 12; i++) {
             const arr = [];
-            for (let j = 0; j <= 24; j++) {
+            for (let j = 0; j < 36; j++) {
                 const random = Math.floor(Math.random() * 2);
                 arr.push(random);
             }
